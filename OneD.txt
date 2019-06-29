@@ -1,0 +1,41 @@
+class OneD {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		int num[];
+		num = new int[5];
+		num[0]=10;
+		num[1]=25;
+		num[2]=30;
+		num[3]=45;
+		num[4]=50;
+		System.out.println("Hello..!!");
+		System.out.println("Welcome To One Dimensional Array... ");
+		System.out.println("Result =" +num[3]);
+		System.out.println("Result =" +num[4]);
+		OneD Obj = new twod(); //cannot instantiate the abstract class
+		((twod) Obj).value();
+		
+			}
+
+}
+class twod extends OneD
+{
+	public void value()
+	{
+		
+		int num[];
+		num = new int[8];
+		num[0]=11;
+		num[1]=22;
+		num[2]=33;
+		num[3]=44;
+		num[4]=55;
+		num[5]=66;
+		num[6]=77;
+		num[7]=88;
+		
+		System.out.println("Result =" +num[5]);
+	}
+}

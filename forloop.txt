@@ -1,0 +1,16 @@
+public class forloop {
+
+	public static void main(String[] args) {
+		System.out.println("Hello....");
+		System.out.println("Welcome To For Loop");
+		
+		System.out.println("Program:");
+		
+		// i++ i = i + 1
+	// for("initial value, condition, increment/decrement")
+   for(int i = 0 ; i < 10 ; i++){
+	   System.out.println("i = " + i);
+   }
+	}
+
+}

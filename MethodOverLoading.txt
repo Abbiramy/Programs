@@ -1,0 +1,38 @@
+public class MethodOverLoading {
+	
+	public static void main(String[] args) {
+		System.out.println("Hello");
+		System.out.println("Welcome To Method Over Loading");
+		System.out.println("Programs:");
+		System.out.println("Addition:");
+		System.out.println( Add (1,36));
+		System.out.println( Add (5.10,20.25));
+		System.out.println(Add (45.6,54.3));
+		
+		System.out.println("Subtraction:");
+		System.out.println(Sub(65,26));
+		System.out.println(Sub(74.29,1.6));
+		System.out.println(Sub(76,32));
+		
+		
+	}
+	
+    public static int Add(int a, int b){
+    	return(a+b); 
+    }
+    public static double Add(double a , double b){
+    	return(a+b);
+    }
+    public static String Add(String a , String b){
+    	return(a+b);
+    }
+    
+      public static int Sub(int a, int b){
+    	return(a-b);
+    }
+    public static double Sub(double a , double b){
+    	return(a-b);
+    }
+    
+    	
+}

@@ -1,0 +1,35 @@
+public class ExceptionHandling {
+
+	public static void main(String[] args)
+	{
+		
+                 System.out.println("Hello");
+          System.out.println("Welcome to Exception Handling");
+         
+          @SuppressWarnings("resource")
+		Scanner input =  new Scanner (System.in);
+           
+          System.out.println("Enter first num ");
+          int n1 = input.nextInt();
+          System.out.println("Enter second num ");
+          int n2 = input.nextInt();
+          int sum = n1*n2;
+          System.out.println(sum);
+          
+          System.out.println("Enter third num");
+          int n3 = input.nextInt();
+          System.out.println("Enter fourth num");
+          int n4 = input.nextInt();
+          int sum1 = n3-n4;
+          
+          System.out.println(sum1);
+          
+          System.out.println("Enter third num");
+          int n5 = input.nextInt();
+          int sum2 = n5+n3;
+          
+          System.out.println(sum2);
+
+	}
+
+}

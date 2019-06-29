@@ -1,0 +1,19 @@
+
+public class whileloop {
+
+	public static void main(String[] args) {
+		System.out.println("Hello....");
+		System.out.println("Welcome To While Loop");
+		System.out.println("Program:");
+		int x = -10;
+		while(x <= 2){
+			
+			System.out.println("x =" + x);
+			//x++;
+			// x = + 1;
+			x += 2; 
+		}
+
+	}
+
+}
