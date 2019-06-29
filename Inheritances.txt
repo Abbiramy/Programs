@@ -1,0 +1,33 @@
+package Inheritances;
+
+public class InheritanceA {
+	
+	int value=32;
+     public void msg(){ 
+    	 System.out.println(" Hello....!!");
+    	 
+    	 
+     }
+}               
+public class InheritanceB extends InheritanceA {
+	
+	public void demo(){
+	System.out.println("Welcome To Inheritance....!!!");
+	    System.out.println("Program is : ");
+	}
+	public static void main(String[]args){
+       InheritanceB b=new InheritanceB();
+       b.msg();
+       System.out.println(b.value);
+	}
+	}
+public class InheritanceC extends InheritanceB{
+	public static void main(String[] args) {
+		InheritanceC c=new InheritanceC();
+		c.msg();
+		c.demo();
+		System.out.println(c.value);
+				
+	}
+
+}

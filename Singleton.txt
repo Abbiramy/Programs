@@ -1,0 +1,62 @@
+package sigletons;
+
+public class Singleton {
+    String name, teacher;
+    public Singleton(String singletonName)
+    {
+  	  this.name = singletonName;
+  	  SingletonSchool singletonschool =SingletonSchool.HighSchool;
+  	  teacher = singletonschool.getTeacher();
+   }
+public String getName() {
+		return name;
+	}
+public void setName(String name) {
+		this.name = name;
+	}
+public String getTeacher() {
+		return teacher;
+	}
+public void setTeacher(String teacher) {
+		this.teacher = teacher;
+	}
+public static void main(String[] args) 
+{
+	for(int i=0; i<10; i++)
+	{
+		Singleton first =  new Singleton ("Singleton "+i);
+		    System.out.println(first.getName()+" has teacher: "+ first.getTeacher());
+		}
+}
+}
+
+/**
+ * 
+ * 
+ * @ author abi
+ */
+public enum SingletonSchool {
+	MiddleSchool(), HighSchool(), University();
+
+	private ArrayList<String> teachers ;
+	SingletonSchool () 
+	{
+		teachers = new ArrayList<String>();
+		teachers.add("kavya");
+		teachers.add("sushmitha");
+		teachers.add("rame");
+		teachers.add("jeyanthi");
+		teachers.add("nisha");
+	}
+ 
+	public String getTeacher()
+	{
+		if(teachers.size()>0 )
+			return teachers.remove(0);
+		return "No Teacher";
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,60 @@
+package Overriding;
+
+public class Overriding {
+
+
+	public static void main(String[] args) {
+		
+		String  data = "Hello...";
+		
+		System.out.println(data.toString());
+		
+		Employee emp = new Employee(12, "abi");
+		System.out.println(emp);
+		
+		
+		
+
+	}
+
+}
+
+public class Employee {
+	
+	private int id;
+	private String name;
+
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Employee(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "[id :"+ id + ", name : "+  name +"]";
+		
+		
+	}
+	
+}
